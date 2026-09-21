@@ -211,6 +211,49 @@ a {
     padding: 8px 14px;
     font-size: 12px;
   }
+
+  .services {
+    padding: 90px 20px;
+  }
+
+  .services-header {
+    display: block;
+    margin-bottom: 60px;
+  }
+
+  .services-header h2 {
+    margin-top: 30px;
+    text-align: left;
+    font-size: 58px;
+  }
+
+  .service-item {
+    min-height: 120px;
+
+    grid-template-columns: 45px 1fr 50px;
+
+    padding: 20px 0;
+  }
+
+  .service-item:hover {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .service-main h3 {
+    font-size: 30px;
+  }
+
+  .service-description {
+    font-size: 13px;
+    max-width: 90%;
+  }
+
+  .service-symbol {
+    width: 42px;
+    height: 42px;
+    font-size: 17px;
+  }
 }
 
 /* =========================
@@ -372,4 +415,141 @@ a {
 .portfolio-info span {
   font-size: 13px;
   opacity: 0.6;
+}
+
+/* =========================
+   SERVICES
+========================= */
+
+.services {
+  padding: 140px 5%;
+  background: #231f20;
+  color: #ffffff;
+}
+
+.services-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 90px;
+}
+
+.services-header p {
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.services-header h2 {
+  font-family: "Archivo Black", sans-serif;
+  font-size: clamp(55px, 7vw, 105px);
+  line-height: 0.88;
+  letter-spacing: -0.06em;
+  text-align: right;
+}
+
+
+/* =========================
+   SERVICE LIST
+========================= */
+
+.services-list {
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.service-item {
+  min-height: 150px;
+
+  display: grid;
+  grid-template-columns: 100px 1fr 100px;
+  align-items: center;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+
+  padding: 25px 0;
+
+  cursor: pointer;
+
+  transition:
+    padding 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.service-item:hover {
+  padding-left: 20px;
+  padding-right: 20px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+
+/* =========================
+   SERVICE NUMBER
+========================= */
+
+.service-number {
+  font-size: 13px;
+  opacity: 0.5;
+  letter-spacing: 1px;
+}
+
+
+/* =========================
+   SERVICE TITLE
+========================= */
+
+.service-main h3 {
+  font-family: "Archivo Black", sans-serif;
+
+  font-size: clamp(32px, 4vw, 60px);
+
+  line-height: 0.95;
+
+  letter-spacing: -0.04em;
+
+  transition: transform 0.3s ease;
+}
+
+.service-item:hover .service-main h3 {
+  transform: translateX(8px);
+}
+
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.service-description {
+  max-width: 500px;
+
+  margin-top: 12px;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+
+  opacity: 0.5;
+}
+
+
+/* =========================
+   SYMBOL
+========================= */
+
+.service-symbol {
+  width: 65px;
+  height: 65px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  border-radius: 50%;
+
+  font-size: 24px;
+
+  justify-self: end;
+
+  color: #e0b190;
 }
