@@ -5,6 +5,7 @@ import Portfolio from "./components/Portfolio";
 import Services from "./components/Services";
 import WhyUs from "./components/WhyUs";
 import About from "./components/About";
+import Process from "./components/Process";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Services />
         <WhyUs />
         <About />
+        <Process />
       </main>
     </>
   );
