@@ -6,6 +6,7 @@ import Services from "./components/Services";
 import WhyUs from "./components/WhyUs";
 import About from "./components/About";
 import Process from "./components/Process";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <WhyUs />
         <About />
         <Process />
+        <Contact />
       </main>
     </>
   );
