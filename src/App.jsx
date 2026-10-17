@@ -7,10 +7,11 @@ import WhyUs from "./components/WhyUs";
 import About from "./components/About";
 import Process from "./components/Process";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <>
+    <div id="top">
       <Navbar />
 
       <main>
@@ -23,7 +24,9 @@ function App() {
         <Process />
         <Contact />
       </main>
-    </>
+
+      <Footer />
+    </div>
   );
 }
 
